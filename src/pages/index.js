@@ -3,11 +3,14 @@ import { graphql, Link } from "gatsby"
 import { css } from "@emotion/core"
 import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
+import SEO from '../components/seo'
+
 
 export default function Home({ data }) {
   console.log(data)
   return (
     <Layout>
+      <SEO title='Pandas Eating Lots' />
       <div>
         <h1
           css={css`
